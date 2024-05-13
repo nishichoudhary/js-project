@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Tracker</h1>
+
+        <div class="entryForms">
+            <h2>Enter Income</h2>
+            <div>
+                <label for="incomeInput">Amount:</label>
+                <input type="number" id="incomeInput" placeholder="Enter income amount">
+                <button id="addIncomeBtn">Add Income</button>
+            </div>
+            <ul id="incomeList"></ul>
+            <h2>Enter Expenses</h2>
+            <div>
+                <label for="expenseInput">Amount:</label>
+                <input type="number" id="expenseInput" placeholder="Enter expense amount">
+                <label for="expenseCategorySelect">Category:</label>
+                <select id="expenseCategorySelect">
+                    <option value="">Select category</option>
+                    <option value="Food">Food</option>
+                    <option value="Transportation">Transportation</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Utilities">Utilities</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button id="addExpenseBtn">Add Expense</button>
+            </div>
+            <ul id="expenseList"></ul>
+        </div>
+
+        <div class="summary">
+            <h2>Summary</h2>
+            <div>
+                <label for="currencySelect">Select Currency:</label>
+                <select id="currencySelect"></select>
+            </div>
+            <div id="summaryDetails">
+                <p>Total Income: <span id="totalIncome"></span></p>
+                <p>Total Expenses: <span id="totalExpenses"></span></p>
+                <p>Remaining Budget: <span id="remainingBudget"></span></p>
+            </div>
+        </div>
+
+        <div class="currencyConverter">
+            <h2>Currency Converter</h2>
+            <div>
+                <label for="sourceCurrencySelect">From:</label>
+                <select id="sourceCurrencySelect"></select>
+            </div>
+            <div>
+                <label for="targetCurrencySelect">To:</label>
+                <select id="targetCurrencySelect"></select>
+            </div>
+            <div>
+                <label for="conversionAmount">Amount:</label>
+                <input type="number" id="conversionAmount" placeholder="Enter amount">
+            </div>
+            <button id="convertButton">Convert</button>
+            <div id="conversionResult"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

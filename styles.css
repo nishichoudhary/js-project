@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center; /* Center align headings */
+}
+
+.summary, .currencyConverter, .entryForms {
+    margin-bottom: 30px;
+}
+
+.summary, .currencyConverter {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+.currencyConverter, .entryForms {
+    background-color: #f9f9f9;
+}
+
+.currencyConverter, .entryForms h2 {
+    margin-top: 20px;
+    text-align: center; /* Center align subheadings */
+}
+
+.currencyConverter div, .entryForms div {
+    margin-bottom: 10px;
+}
+
+.currencyConverter label, .entryForms label {
+    font-weight: bold;
+}
+
+.currencyConverter select, .currencyConverter input, .currencyConverter button,
+.entryForms select, .entryForms input, .entryForms button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.currencyConverter button, .entryForms button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+.currencyConverter button:hover, .entryForms button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+#conversionResult {
+    margin-top: 10px;
+    font-weight: bold;
+}
